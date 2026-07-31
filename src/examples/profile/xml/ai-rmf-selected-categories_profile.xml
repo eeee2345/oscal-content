@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="2c8e5f31-9a06-4b74-90ae-7d1f3b2c8853">
+  <metadata>
+    <title>AI RMF Selected Categories Example Profile for Demonstration and Testing</title>
+    <published>2026-07-31T00:00:00.000000-00:00</published>
+    <last-modified>2026-07-31T00:00:00.000000-00:00</last-modified>
+    <version>1.0.0</version>
+    <oscal-version>1.2.2</oscal-version>
+    <remarks>
+      <p>This example demonstrates include-controls with with-child-controls, which selects each named control together with its child controls, and custom structuring, which places the resolved controls into a group defined by the profile rather than the groups defined by the imported catalog. The controls named here are the first category of each of the four AI RMF functions, chosen as a structural illustration. The selection is illustrative and is not a NIST-recommended, required, or otherwise normative AI RMF baseline.</p>
+    </remarks>
+  </metadata>
+  <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
+    <include-controls with-child-controls="yes">
+      <with-id>GOVERN_1</with-id>
+      <with-id>MANAGE_1</with-id>
+      <with-id>MAP_1</with-id>
+      <with-id>MEASURE_1</with-id>
+    </include-controls>
+  </import>
+  <merge>
+    <custom>
+      <group id="ai-rmf-selected-categories">
+        <title>Selected AI RMF Categories</title>
+        <insert-controls order="ascending">
+          <include-all/>
+        </insert-controls>
+      </group>
+    </custom>
+  </merge>
+</profile>
