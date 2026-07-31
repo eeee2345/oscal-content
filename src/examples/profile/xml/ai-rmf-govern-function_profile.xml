@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="50b62e31-f96d-4154-a82c-68b7870b675c">
+  <metadata>
+    <title>AI RMF GOVERN Function — Example Profile</title>
+    <published>2026-07-31T00:00:00.000000-04:00</published>
+    <last-modified>2026-07-31T00:00:00.000000-04:00</last-modified>
+    <version>1.0.0</version>
+    <oscal-version>1.2.2</oscal-version>
+    <remarks>
+      <p>An example profile that scopes the AI RMF 1.0 catalog to a single function.
+      It selects the GOVERN function by glob expression, which resolves to 25 controls:
+      the 6 GOVERN categories and their 19 subcategories.</p>
+      <p>This example demonstrates selection by <code>matching</code> pattern against a
+      catalog whose control identifiers carry the function name as a prefix, and the
+      <code>as-is</code> merge strategy, which preserves the catalog's group structure so
+      the resolved catalog still presents GOVERN as a function.</p>
+    </remarks>
+  </metadata>
+  <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
+    <include-controls>
+      <matching pattern="GOVERN*"/>
+    </include-controls>
+  </import>
+  <merge>
+    <as-is>true</as-is>
+  </merge>
+</profile>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="16b58fd7-ef5f-41f2-8110-d9a8c7a837e9">
+  <metadata>
+    <title>AI RMF Category Level — Example Profile</title>
+    <published>2026-07-31T00:00:00.000000-04:00</published>
+    <last-modified>2026-07-31T00:00:00.000000-04:00</last-modified>
+    <version>1.0.0</version>
+    <oscal-version>1.2.2</oscal-version>
+    <remarks>
+      <p>An example profile that selects the 19 AI RMF categories across all four
+      functions while leaving their 72 subcategories out, producing a category-level view
+      of the framework.</p>
+      <p>This example demonstrates <code>with-child-controls="no"</code>, which is what
+      makes the selection possible: the AI RMF catalog nests each subcategory control
+      inside its category control, so selecting a category by identifier would otherwise
+      carry its subcategories with it. It also demonstrates the <code>flat</code> merge
+      strategy, which drops the group structure and presents the selected controls as a
+      single list.</p>
+    </remarks>
+  </metadata>
+  <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
+    <include-controls with-child-controls="no">
+      <with-id>GOVERN_1</with-id>
+      <with-id>GOVERN_2</with-id>
+      <with-id>GOVERN_3</with-id>
+      <with-id>GOVERN_4</with-id>
+      <with-id>GOVERN_5</with-id>
+      <with-id>GOVERN_6</with-id>
+      <with-id>MAP_1</with-id>
+      <with-id>MAP_2</with-id>
+      <with-id>MAP_3</with-id>
+      <with-id>MAP_4</with-id>
+      <with-id>MAP_5</with-id>
+      <with-id>MEASURE_1</with-id>
+      <with-id>MEASURE_2</with-id>
+      <with-id>MEASURE_3</with-id>
+      <with-id>MEASURE_4</with-id>
+      <with-id>MANAGE_1</with-id>
+      <with-id>MANAGE_2</with-id>
+      <with-id>MANAGE_3</with-id>
+      <with-id>MANAGE_4</with-id>
+    </include-controls>
+  </import>
+  <merge>
+    <flat/>
+  </merge>
+</profile>
