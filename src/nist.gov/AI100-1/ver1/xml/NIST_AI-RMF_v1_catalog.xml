@@ -5,7 +5,7 @@
         <published>2026-07-07T10:02:11.237801-04:00</published>
         <last-modified>2026-07-07T10:02:11.158696-04:00</last-modified>
         <version>1.0.0</version>
-        <oscal-version>v1.2.2</oscal-version>
+        <oscal-version>1.2.2</oscal-version>
         <prop name="framework-identifier" ns="https://csrc.nist.gov/ns/cprt" value="AI_100" />
         <prop name="framework-version-identifier" ns="https://csrc.nist.gov/ns/cprt"
             value="AI_100_1_0_0" />
