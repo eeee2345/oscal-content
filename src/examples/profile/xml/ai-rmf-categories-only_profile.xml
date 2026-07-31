@@ -13,10 +13,10 @@
   <import href="../../../nist.gov/AI100-1/ver1/xml/NIST_AI-RMF_v1_catalog.xml">
     <include-all/>
     <exclude-controls>
-      <matching pattern="GOVERN_?.*"/>
-      <matching pattern="MANAGE_?.*"/>
-      <matching pattern="MAP_?.*"/>
-      <matching pattern="MEASURE_?.*"/>
+      <matching pattern="GOVERN_*.*"/>
+      <matching pattern="MANAGE_*.*"/>
+      <matching pattern="MAP_*.*"/>
+      <matching pattern="MEASURE_*.*"/>
     </exclude-controls>
   </import>
   <merge>
