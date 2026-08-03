@@ -23,7 +23,12 @@
       <group id="ai-rmf-selected-categories">
         <title>Selected AI RMF Categories</title>
         <insert-controls order="ascending">
-          <include-all/>
+          <include-controls with-child-controls="yes">
+            <with-id>GOVERN_1</with-id>
+            <with-id>MANAGE_1</with-id>
+            <with-id>MAP_1</with-id>
+            <with-id>MEASURE_1</with-id>
+          </include-controls>
         </insert-controls>
       </group>
     </custom>
